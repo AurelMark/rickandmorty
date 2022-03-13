@@ -1,0 +1,176 @@
+@keyframes animateButtonAlive {
+    0% {
+        border: 7px solid #12522c;
+    }
+
+    25% {
+        border: 7px solid #2ecc71;
+    }
+
+    50% {
+        border: 7px solid #12522c;
+    }
+
+    75% {
+        border: 7px solid #2ecc71;
+    }
+
+    100% {
+        border: 7px solid #12522c;
+    }
+}
+
+@keyframes animateButtonDead {
+    0% {
+        border: 7px solid #b33939;
+        filter: grayscale(100%);
+    }
+
+    25% {
+        border: 7px solid #ff5252;
+        filter: grayscale(0%);
+    }
+
+    50% {
+        border: 7px solid #b33939;
+        filter: grayscale(100%);
+    }
+
+    75% {
+        border: 7px solid #ff5252;
+        filter: grayscale(0%);
+    }
+
+    100% {
+        border: 7px solid #b33939;
+        filter: grayscale(100%);
+    }
+}
+
+@keyframes animateButtonUnknown {
+    0% {
+        border: 7px solid #4c2b58;
+    }
+
+    25% {
+        border: 7px solid #9b59b6;
+    }
+
+    50% {
+        border: 7px solid #4c2b58;
+    }
+
+    75% {
+        border: 7px solid #9b59b6;
+    }
+
+    100% {
+        border: 7px solid #4c2b58;
+    }
+}
+
+.Character {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-gap: 1rem 3rem;
+
+    &Alive {
+        border: 7px solid #2ecc71;
+        animation-name: animateButtonAlive;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    &Dead {
+        border: 7px solid #e74c3c;
+        animation-name: animateButtonDead;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    &Unknown {
+        border: 7px solid #9b59b6;
+        animation-name: animateButtonUnknown;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+
+    &Data {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            border-radius: 50%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.DividerDiv {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-gap: 1rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .Character {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &Data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+                width: 15rem;
+            }
+
+        }
+    }
+
+    .DividerDiv {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        align-items: center
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .Character {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &Data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+                width: 15rem;
+            }
+
+        }
+    }
+
+    .DividerDiv {
+        display: grid;
+        grid-template-columns: 4.5rem 1fr;
+        align-items: center
+    }
+}

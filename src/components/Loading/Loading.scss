@@ -1,0 +1,34 @@
+.Loading {
+    height: 90vh;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FCFEFC;
+
+    img {
+        max-width: 25rem;
+    }
+
+    &Title {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Loading {
+        img {
+            max-width: 15rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .Loading {
+        img {
+            max-width: 10rem;
+        }
+    }
+}

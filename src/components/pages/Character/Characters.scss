@@ -1,0 +1,67 @@
+.Characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    &Filter {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &Image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 20rem;
+        }
+        
+    }
+
+    &Text {
+        font-size: 2.6rem;
+    }
+
+
+    &Pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    &Search {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &SubmitSecond {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1439px) {
+    .Characters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Characters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .Characters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

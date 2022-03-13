@@ -1,0 +1,56 @@
+.Dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+
+    img {
+        height: 290px;
+    }
+
+    &Title {
+        text-align: center;
+    }
+
+    &Image {
+        position: relative;
+
+        &Title {
+            position: absolute;
+            z-index: 9999;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.35);
+            color: #fff;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+
+            &:hover {
+                transition: 0.5s;
+                background-color: rgba(0, 0, 0, 0.55);
+            }
+
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .Dashboard {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 480px;
+        }
+    }
+}

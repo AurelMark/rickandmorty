@@ -1,0 +1,6 @@
+export const CHARACTERS_LIST = "CHARACTERS/LIST/ALL";
+export const LOADING = "LOADING";
+export const PAGE = "PAGE";
+export const CHARACTERS_FILTER = "CHARACTERS/FILTER";
+export const NOT_FOUND = "CHARACTERS/NOT/FOUND";
+export const CHARACTER_SINGLE = "CHARACTER/SINGLE/GET";

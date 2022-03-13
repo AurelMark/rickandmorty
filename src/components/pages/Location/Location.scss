@@ -1,0 +1,65 @@
+.Location {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-gap: 1rem;
+
+    &Data {}
+
+    &Details {
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        grid-gap: 1rem
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    &Characters {
+        margin-top: 2rem;
+
+        button {
+            margin: 0.25rem 0.3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Location {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &Data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .Location {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &Data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        &Details {
+            display: grid;
+            grid-template-columns: 5rem 1fr;
+            grid-gap: 1rem
+        }
+    }
+
+
+}

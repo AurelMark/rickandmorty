@@ -1,0 +1,13 @@
+.iconColor {
+  color: #42b4ca;
+}
+
+.listHover {
+  border-top: 1px solid #fff !important;
+  border-bottom: 1px solid #fff !important;
+  &:hover {
+    background-color: #fff8749d !important;
+    border-top: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+}

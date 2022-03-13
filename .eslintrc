@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["react", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "process": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "warn",
+    "no-eval": "error",
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "ignorePatterns": ["/config", "/node_modules", "/build"]
+}

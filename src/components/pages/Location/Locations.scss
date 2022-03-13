@@ -1,0 +1,64 @@
+.Locations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+
+    &Pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    &Filter {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+
+    &Image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 20rem;
+        }
+
+    }
+
+    &Submit {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    &Search {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
+    &Text {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 1439px) {
+    .Locations {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Locations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .Locations {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended"],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}
