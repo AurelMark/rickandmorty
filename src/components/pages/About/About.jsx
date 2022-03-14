@@ -49,7 +49,7 @@ const About = () => {
         <ExternalLink link='https://github.com/AurelMark' bold={true}>
           Aurel Mark
         </ExternalLink>{" "}
-        just for fun on React Framwwork
+        just for fun on React Framweork
       </p>
     </div>
   );
