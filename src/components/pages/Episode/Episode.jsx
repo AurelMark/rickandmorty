@@ -41,9 +41,11 @@ const Episode = ({
           <strong>Episode:</strong>
           <div>{episode?.episode}</div>
           <strong>Air Date:</strong>
-          <Button variant='outlined' color='secondary'>
-            {episode?.air_date}
-          </Button>
+          <div>
+            <Button variant='outlined' color='secondary'>
+              {episode?.air_date}
+            </Button>
+          </div>
           <strong>Created:</strong>
           <div>{`${new Date(episode?.created).toLocaleDateString()} ${new Date(
             episode?.created

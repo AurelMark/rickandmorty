@@ -128,7 +128,14 @@ const Character = ({ character, getCharacterSingle, loading, notFound }) => {
           <div>
             {character?.episode?.map((el, i) => {
               return (
-                <Button key={i}>{locationString("/", el).substr(1)}</Button>
+                <Button
+                  onClick={() =>
+                    history(`/episode/${locationString("/", el).substr(1)}`)
+                  }
+                  key={i}
+                >
+                  {locationString("/", el).substr(1)}
+                </Button>
               );
             })}
           </div>
