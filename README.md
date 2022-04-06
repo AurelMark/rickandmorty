@@ -5,4 +5,4 @@ to open this project on your machine, just follow this steps:
 3) npm start - to run project
 PROFIT
 
-DEMO - https://rickandmortyapis.herokuapp.com/(react application) | https://rickandmortyweb.w3spaces.com (builded)
+DEMO - https://rickandmortyapis.herokuapp.com/ (react application) | https://rickandmortyweb.w3spaces.com (builded)
